@@ -1,0 +1,25 @@
+# 依赖
+node_modules/
+
+# 环境变量（包含敏感信息）
+.env
+*.env.local
+
+# 日志
+*.log
+logs/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# 构建产物
+dist/
+build/
+
+# 临时文件
+tmp/
+temp/

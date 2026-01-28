@@ -1,0 +1,26 @@
+{
+  "name": "moltbot-feishu-bridge",
+  "version": "1.0.0",
+  "description": "Bridge service connecting Feishu/Lark to Moltbot AI assistant",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "moltbot",
+    "feishu",
+    "lark",
+    "ai",
+    "assistant",
+    "bridge"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.35.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

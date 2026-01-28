@@ -1,0 +1,18 @@
+[Unit]
+Description=Moltbot Gateway
+After=network.target
+
+[Service]
+Type=simple
+# 修改 HOME 为你的用户目录
+Environment=HOME=/home/admin
+Environment=NODE_ENV=production
+# API Keys 从 .env 文件加载
+EnvironmentFile=-/home/admin/.clawdbot/.env
+# 注意：CLI 命令仍然是 clawdbot（官方未改）
+ExecStart=/usr/bin/clawdbot gateway
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target

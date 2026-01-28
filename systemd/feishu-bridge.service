@@ -1,0 +1,17 @@
+[Unit]
+Description=Moltbot-Feishu Bridge
+After=network.target moltbot.service
+
+[Service]
+Type=simple
+# 修改为你的用户目录
+Environment=HOME=/home/admin
+# 飞书凭证从 .env 文件加载
+EnvironmentFile=/home/admin/feishu-bridge/.env
+WorkingDirectory=/home/admin/feishu-bridge
+ExecStart=/usr/bin/node index.js
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target
