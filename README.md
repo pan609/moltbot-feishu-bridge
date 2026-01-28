@@ -22,14 +22,14 @@
 ### 前置要求
 
 - 云服务器（阿里云/腾讯云等，2核2G即可）
-- Node.js 18+
+- Node.js 22+（Moltbot CLI 官方要求）
 - 飞书开放平台账号
 - LLM API Key（DeepSeek / MiniMax 等）
 
 ### 第一步：安装 Moltbot
 
 ```bash
-# 安装 Node.js 22（如果没有）
+# 安装 Node.js 22+（Moltbot CLI 官方要求）
 curl -fsSL https://rpm.nodesource.com/setup_22.x | sudo -E bash -
 sudo yum install -y nodejs  # 或 apt install nodejs
 

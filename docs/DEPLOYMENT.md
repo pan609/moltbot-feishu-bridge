@@ -27,7 +27,7 @@
 
 - 操作系统：阿里云 Linux 3 / CentOS 7+ / Ubuntu 20.04+
 - 内存：建议 2GB+
-- Node.js：22.x+
+- Node.js：22+（Moltbot CLI 官方要求）
 
 ### 1.2 安装 Node.js 22+
 
@@ -46,7 +46,7 @@ sudo apt-get install -y nodejs
 **验证安装：**
 ```bash
 node -v  # 应显示 v22.x.x
-npm -v   # 应显示 10.x.x
+npm -v
 ```
 
 ### 1.3 配置 Git 使用 HTTPS
